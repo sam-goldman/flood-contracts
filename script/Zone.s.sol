@@ -5,12 +5,11 @@ import {BetterScript, console} from "./BetterScript.s.sol";
 import {Zone, IAuthZone} from "src/Zone.sol";
 
 contract ZoneScript is BetterScript {
-    function run() public {
+    function run() sphinx public {
         address zoneAdmin = vm.envAddress("ZONE_ADMIN_ADDRESS");
         bytes memory creationCode = type(Zone).creationCode;
 
         bytes32 SALT = 0x110000000000000000000000029532389421a900e64019801c37e40fb75eaa6b;
-        vm.broadcast(zoneAdmin);
         address zone = deploy3(creationCode, SALT, abi.encode(zoneAdmin));
 
         console.log("Zone deployed at", zone);

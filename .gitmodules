@@ -13,3 +13,6 @@
 [submodule "lib/leb128-nooffset"]
 	path = lib/leb128-nooffset
 	url = https://github.com/Shungy/leb128-nooffset
+[submodule "lib/sphinx"]
+	path = lib/sphinx
+	url = https://github.com/sphinx-labs/sphinx

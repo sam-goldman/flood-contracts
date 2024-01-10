@@ -14,5 +14,8 @@
   },
   "dependencies": {
     "ethers": "^6.9.0"
+  },
+  "devDependencies": {
+    "@sphinx-labs/plugins": "^0.28.0"
   }
 }
